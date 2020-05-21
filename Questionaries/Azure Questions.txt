@@ -1,0 +1,575 @@
+Azure Interview Questions
+Basic Azure Questions: (Level 1)
+1. What is Microsoft Azure and why is it used?
+ The companies which provide the cloud service are called the Cloud Providers. There are a lot of cloud providers out there, out of them one is Microsoft Azure. It is used for accessing Microsoft’s infrastructure for cloud.
+
+2. Which service in Azure is used to manage resources in Azure? 
+Azure Resource Manager is used to “manage” infrastructures which involve a no. of azure services. It can be used to deploy, manage and delete all the resources together using a simple JSON script. 
+
+3. Explain the Window Azure platform? 
+It is collectively a PaaS developed by the Microsoft programmed to run a deployment vehicle and a runtime for the data center to host the cloud computing.
+
+4. What are Roles and why do we use them? 
+Roles are nothing servers in layman terms. These servers are managed, load balanced, Platform as a Service virtual machines that work together to achieve a common goal. 
+There are 3 types of roles in Microsoft Azure: 
+•	Web role
+•	Worker Role
+•	VM Role
+
+5. What Is Web Role In Windows Azure? 
+Web roles in Windows Azure are special purpose, and provide a dedicated Internet Information Services (IIS) web-server used for hosting front-end web applications. You can quickly and easily deploy web applications to Web Roles and then scale your Compute capabilities up or down to meet demand. 
+
+6. What are the main functions of the Azure Cloud Service? 
+The main functions of the Azure Cloud Service are; 
+•	It is designed to host the running application and at the same time manage the background running application.
+•	The application of web processing is termed as “web role” whereas the background processing is termed as the “worker role”.
+
+7. What is Azure Service Level Agreement? 
+The SLA ensures that, when you send two or more role instances for each role, access to your cloud service will be maintained not less than 99.95 percent of the time. Additionally, identification and re-correction activities will be started 99.9 percent of the time when a role instance’s procedure isn’t running. 
+
+8. What is a cloud service role? 
+A cloud service role is comprised of application files and a configuration. A cloud service can have two types of roles. 
+
+9. What is a guest operating system? 
+The guest operating system for a cloud service is the operating system installed on the role instances (virtual machines) on which your application code runs. 
+
+10. What is Azure Diagnostics? 
+Azure Diagnostics is the API that enables you to collect diagnostic data from applications running in Azure. Azure Diagnostics must be enabled for cloud service roles in order for verbose monitoring to be turned on. 
+
+11. What is a break-fix issue? 
+In Azure, break-fix issues are referred to as technical problems. It is an industry term used when “work involved in supporting a technology when it fails its normal course of action”. 
+
+12. What are the three main components of the Windows Azure Platform? 
+•	Compute
+•	Storage
+•	AppFabric
+
+13. What are the options to manage session state in Windows Azure? 
+•	Windows Azure Caching 
+•	SQL Azure 
+•	Azure Table 
+
+14. What is cspack? 
+It is a command-line tool that generates a service package file (.cspkg) and prepares an application for deployment, either to Windows Azure or to the compute emulator. 
+
+15. What is csrun? 
+It is a command-line tool that deploys a packaged application to the Windows Azure compute emulator and manages the running service. 
+
+16. What is Blob? 
+BLOB stands for Binary Large Object. Blob is a file of any type and size. The Azure Blob Storage offers two types of blobs – 
+•	Block Blob 
+•	Page Blob 
+
+17. What are the different types of storage available in Azure? 
+The different types of Storage are: 
+1.	Blobs: Used for storing massive amounts of unstructured and large data. 
+2.	Queues: Used for storing messages used for communication between application components. 
+3.	Files: Used for storing files and sharing it among the VMs as shared disk storage. 
+4.	Disks: Used for creating virtual machine disks for high I/O and random read-write operations. 
+5.	Tables: Used for storing structured data in NoSQL format. Suitable for small size database.
+
+18. What is Azure Function? 
+Azure Function is a Serverless Compute Service that Runs code on Demand like Events or External-Invoke. Azure Functions can Scale up Automatically based on Demand. Azure functions are the evolution of Web Jobs. You can develop functions in C#, Node, Java, Python etc. Internally, Azure functions use App services. 
+
+19. Explain Network Security Groups? 
+Network security groups help in distributing the network load effectively. Additionally, they assist in managing the network traffic to subnets and NIC. 
+
+20. Name some important applications of Microsoft Azure 
+Most important application of Microsoft Azure are: 
+Infrastructure Services, Mobile Apps, Web Applications, Cloud Services, Storage, Media Services, etc. 
+
+21. Explain command task in Microsoft Azure 
+Command task is an operational window which set off the flow of either single or multiple common whiles when the system is running. 
+
+22. How many instances of a Role should be deployed to satisfy Azure SLA?
+TWO. And if we do so, the role would have external connectivity at least 99.95% of the time.
+
+23. What is the pack?
+ It is a command-line tool that generates a service package file (.cspkg) and prepares an application for deployment, either to Windows Azure or to the compute emulator.
+
+24.What are the main functions of the Azure Cloud Service? 
+The main functions of the Azure Cloud Service are: 
+• It is designed to host the running application and at the same time manage the background running application. 
+• The application of web processing is termed as “web role” whereas the background processing is termed as the “worker role”.
+
+25. What are Azure App Services? 
+Azure App Services is the part of PaaS offering from Microsoft Azure. These are used to Quickly build, deploy, and scale enterprise-grade web, mobile, and API apps running on any platform. Behind the scenes, VMs are used but they are abstracted. These support manual scaling and auto-scaling. It having support for Java, Node.js, PHP, Python, .NET and Ruby. 
+
+26. What are the different types of applications provided by App Services in Azure? 
+Azure App Service supports the following types of applications. 
+•	Web Apps 
+•	Mobile Apps 
+•	API Apps 
+•	Logic Apps 
+
+27. How the app services can be scaled? 
+An app service supports two types of scaling - vertical (up/down) and horizontal (out/in). During scaling, there is no impact on service availability. 
+•	In vertical scaling, VM size can be increased or decreased as per your need. 
+•	In horizontal scaling, identical VMs of the desired size will be created or removed as per your need 
+•	Autoscaling is supported by standard and premium based on matrices (response time, memory, CPU, data uses etc.) 
+
+28. How To Create Azure Functions?
+Azure Functions is a solution for executing small lines of code or functions in the cloud. We can also select the programming languages we want to use. We pay only for the time our code executes; that is, we pay per usage. It supports a variety of programming languages, like C#, F#, Node.js, Python, PHP or Java. It supports continuous deployment and integration. Azure Functions applications let us develop serverless applications. 
+
+29.What is the Azure Fabric? 
+The Azure fabric is the main core concept over here. It provides a service called the Azure Fabric Controller. It is called an operating system for the Azure. Because it handles or manages the following: 
+•	All roles (computing) and resources. 
+•	Deployment and activating services. 
+•	Health monitoring for all services. 
+•	Allocating, releasing of resources. 
+•	Provisioning VM, terminating, etc. 
+•	Updating patches for installed OS on Virtual Machine automatically 
+
+30. What is TRIM command used for? 
+The TRIM command, we can specify Azure to charge only for the space the storage actually occupies rather than the allocated space. 
+
+31. What is the difference between a library and a list? 
+The library is an interface that yields one to manage and store a document that can be created using Excel, PowerPoint or Word. The list is the representation of the item in a tabulated format using column and rows. Lists are not used to make a document but can attach documents. 
+
+32. What are the options available in Azure for data storage? 
+Options for storing data includes: 
+•	Azure files 
+•	OS drive 
+•	Scale set 
+•	Temp drive 
+•	Azure data service 
+•	External data service 
+
+33. What are Network Security Groups? 
+A network security group (NSG) contains a list of Access Control List (ACL) rules that allow or deny network traffic to subnets, NICs, or both. NSGs can be associated with either subnets or individual NICs connected to a subnet. When an NSG is associated with a subnet, the ACL rules apply to all the VMs in that subnet. In addition, traffic to an individual NIC can be restricted by associating an NSG directly to a NIC. 
+
+34. Why is Azure Active Directory used? 
+Azure Active Directory is an Identity and Access Management system. It is used to grant access to your employees to specific products and services in your network. For example: Salesforce.com, twitter etc. Azure AD has some in-built support for applications in its gallery which can be added directly. 
+
+35.What is Windows Azure Traffic Manager? 
+It enables Users to control the distribution of user traffic of installed Azure cloud services. There are 3 distinctive load balancing strategies provided by Azure. The Manager who works on traffic apply’s a routing policy to the Domain Name Service (DNS) questions on your domain names and maps the DNS courses to the apt instances of your applications. 
+
+36. Explain traffic manager benefits in Azure? 
+The major benefits offered by the traffic manager in Azure are: 
+•	Distribution of traffic based on several traffic-routing methods. 
+•	Continuous monitoring of endpoint health and automatic failover when endpoints fail. 
+
+37. Explain the types of services you can build with the Service Fabric? 
+Majorly, two types of services you can build on Service Fabric: 
+1.	Stateless Services - No state is stored in the service. The longer-term state is stored in an external database. This is the typical application/data layer approach to build services. 
+2.	Stateful Services - The state is stored in the service. Allows the state to persist without the need for an external database. 
+
+38. What Is Azure Virtual Network? 
+Azure Virtual Network enables Azure resources like Virtual Machines to securely communicate with each other, with the Internet and with on-site networks. It lets you implement multiple virtual networks, as well as a filter or even route network traffic, and to connect virtual networks to each other. 
+
+39.What is meant by the block blob and page BLOB? 
+Blob is a block that is having a specific block ID. Each block in this block BLOB comprises of the 4MB and maximum size of this BLOB limits to 200 GB. Whereas the Page blob contains pages in which data range is determined by the offsets. The maximum limit is 1TB where a single page is of the size 1TB. 
+
+40. What is a VNet?
+ VNet is a representation of your own network in the cloud. It logically isolates your instances launched in the cloud, from the rest of your resources.
+
+41. What is autoscaling in Azure?
+Scaling by including extra instances is frequently referred to as scaling out. Windows Azure likewise supports scaling up by utilizing bigger role rather than more role instances. By adding and expelling role instances to our Windows Azure application while it is running, we can adjust the execution of the application against its running costs.
+An autoscaling solution reduces the amount of manual work engaged in dynamically scaling an application.
+
+42. What is Windows Azure Portal?
+To run an application, a designer gets to the Windows Azure Portal through his/her web program by logging in with a Windows Live ID. The user at that point chooses whether to create a host account for running applications, a storage account for storing data, or both.
+Once the designer has a host account, he/she can utilize a Windows Azure Portal to submit applications to Windows Azure.
+
+43. What is cmdlet in Azure?
+A cmdlet is a lightweight command that is utilized as a part of the Microsoft PowerShell environment. The cmdlets are summoned by the Windows PowerShell to automate the scripts which are in the command line. Windows PowerShell runtime additionally invokes them automatically through Windows PowerShell APIs.
+
+44.What is a Virtual Machine?
+It is a computer file typically called as an image which behaves like an actual computer. It is one of the files which contains everything. It runs in windows,Linux etc. This gives you a flexibility that can run multiple machines in a physical computer. Each system can	have	a	different	operating	system.
+Each of these virtual machines provides its own virtual hardware which includes CPUs, memory, hard drives, network interfaces and other such devices.
+
+45. What Are Azure Virtual Machines Used For? 
+Speaking of virtual, Azure Virtual Machines are used in the same way any virtual machines are used: to add computing power without adding hardware. Azure supports Windows Server (of course), Linux, SAP, Oracle, IBM, and SQL Server.
+
+46. What is a content delivery network on Azure?
+A content delivery network (CDN) is a distributed network of servers that can efficiently deliver web content to users. CDNs store cached content on edge servers in point-of-presence (POP) locations that are close to end users, to minimize latency.
+
+47. What Is the Benefit of the Azure CDN? 
+The Content Delivery Network (or CDN) in Azure offers the same benefits as other CDNs: it can be used to reduce load times and bandwidth as well as speed up responsiveness. 
+
+48. What is Azure Load Balancer?
+Azure Load Balancer operates at layer four of the Open Systems Interconnection (OSI) model. It's the single point of contact for clients. Load Balancer distributes inbound flows that arrive at the load balancer's front end to backend pool instances. These flows are according to configured load balancing rules and health probes. The backend pool instances can be Azure Virtual Machines or instances in a virtual machine scale set.
+
+49.What is Azure Application Gateway?
+Azure Application Gateway is a web traffic load balancer that enables you to manage traffic to your web applications. Traditional load balancers operate at the transport layer (OSI layer 4 - TCP and UDP) and route traffic based on source IP address and port, to a destination IP address and port.
+
+50. Difference between Azure Load Balancer and Application Gateway? 
+Load Balancer runs in Transport Layer, whereas Application Gateway runs in Layer 7. 
+
+Medium Level Azure Questions: (Level 2)
+51. Why do we need storage keys? 
+If a user needs to change the application access key by regenerating the access key, it takes much time to take effect; this provides a downtime. To avoid such types of situations, a secondary access key is provided so that if the primary needs to be changed or regenerated, we can map the secondary temporarily to the storage and regenerate the primary. 
+
+52. What Are Instance Sizes Of Azure? 
+Windows Azure will handle the load balancing for all of the instances that are created. The VM sizes are as follows: 
+Compute Instance Size CPU Memory Instance Storage I/O Performance 
+► Extra Small 1.0 Ghz 768 MB 20 GB Low 
+► Small 1.6 GHz 1.75 GB 225 GB Moderate
+► Medium 2 x 1.6 GHz 3.5 GB 490 GB High 
+► Large 4 x 1.6 GHz 7 GB 1,000 GB High 
+► Extra large 8 x 1.6 GHz 14 GB 2,040 GB High 
+
+53. What is table storage in Windows Azure? 
+A table is an accumulation of elements. Tables don’t implement a pattern on elements, which implies a solitary table can contain substances that have distinctive arrangements of properties. A record can contain numerous tables. 
+
+54.What is the concept of the table in Windows Azure? 
+The table is one type of Azure Storage, where you can store your data as storage. Blobs are stored in container and Entity in the table. 
+Following are the key concepts in the table. 
+Tables allow structured data storage There can be 0..n tables in a storage account Table store data as a collection of entities The entity has a primary key and properties as key-value pair 
+
+55. Is it possible to add an existing VM to an availability set? 
+No. If you want your VM to be part of an availability set, you need to create the VM within the set. There currently no way to add a VM to an availability set after it has been created. 
+
+56. What is a virtual network gateway?
+A virtual network gateway is composed of two or more VMs that are deployed to a specific subnet you create called the gateway subnet. Virtual network gateway VMs contain routing tables and run specific gateway services. These VMs are created when you create the virtual network gateway. You can't directly configure the VMs that are part of the virtual network gateway.
+
+57. What are the types of Virtual Network Gateway? 
+VPN & Express Route. In VPN, there is Site to Site, Multi-Site & Point to Site. 
+
+58. How do you differentiate between minimal and repetitive monitoring? 
+Minimal monitoring is the default configuration method that makes the user of performance counters accumulated from the OS of the host. However, repetitive monitoring gathers information depending on the performance which allows in-depth monitoring of the data. 
+
+59. Name some important applications of Microsoft Azure 
+Most important application of Microsoft Azure are: 
+Infrastructure Services, Mobile Apps, Web Applications, Cloud Services, Storage, Media Services, etc. 
+
+60. What are unconnected lookups? 
+Unconnected lookup the input ins take by the LKP operation. In this type of lookup method, User-defined values are disregarded in the unconnected lookups. 
+
+61. Name three types of Disks used by VMs 
+Three types of disk used in VMs are: 
+•	Operating system
+•	Temporary disk 
+•	Data disk 
+
+62. How much storage can a user with a virtual machine use? 
+Each data disk on the VM can be up to 1 TB. However, the number of data disks, which you can use depends on the size of the virtual machine. 
+
+64. Is it possible to add an existing VM to an availability set? 
+No. If you want your VM to be part of an availability set, you need to create the VM within the set. There currently no way to add a VM to an availability set after it has been created. 
+
+65. How can one create a Virtual Machine in Powershell? 
+# Define a credential object $cred = Get-Credential 
+# Create a virtual machine configuration $vmConfig = New-AzureRmVMConfig -VMName myVM -VMSize Standard_DS2 | `
+ Set-AzureRmVMOperatingSystem -Windows -ComputerName myVM -Credential $cred | 
+` Set-AzureRmVMSourceImage -PublisherName MicrosoftWindowsServer -Offer WindowsServer `
+ -Skus 2016-Datacenter -Version latest | Add-AzureRmVMNetworkInterface -Id $nic.Id 
+
+66. What do you mean by a domain? 
+This is one of the common Azure Interview Questions that may be asked which should be answered as follows the interconnected and interlinked nodes that are often a measure undertaken by the organization is known as the domain. These relations are carried by only one point of the organization. 
+
+67. What are Fault Domains? 
+A fault domain is a logical group of underlying hardware that share a common power source and network switch, similar to a rack within an on-premise data-centers. As you create VMs within an availability set, the Azure platform automatically distributes your VMs across these fault domains. This approach limits the impact of potential physical hardware failures, network outages, or power interruptions. 
+
+68. What are Update Domains? 
+An update domain is a logical group of underlying hardware that can undergo maintenance or can be rebooted at the same time. As you create VMs within an availability set, the Azure platform automatically distributes your VMs across these update domains. This approach ensures that at least one instance of your application always remains running as the Azure platform undergoes periodic maintenance. The order of update domains being rebooted may not proceed sequentially during planned maintenance, but only one update domain is rebooted at a time. 
+
+69. What is an Availability Set? 
+An availability set is a logical grouping of VMs that allows Azure to understand how your application is built to provide redundancy and availability. It is recommended that two or more VMs are created within an availability set to provide for a highly available application and to meet the 99.95% Azure SLA. When a single VM is used with Azure Premium Storage, the Azure SLA applies for unplanned maintenance events. 
+
+70. How Does Active Directory Authentication Works?
+ When a user logs into the network they are given a username and password. The computer sends these to the KDC. This holds the master list of unique long-term keys for each user. The KDC generates a session key and a ticket granting ticket. This information is sent to the user’s computer. The information is sent through a hashing function that converts the data into the user’s master key. The computer then communicates with the KDC to retrieve the domain’s resources.
+
+71. Mention what are the components of AD? 
+Components of AD includes 
+•	Logical Structure: Trees, Forest, Domains and OU 
+•	Physical Structures: Domain controller and Sites 
+
+72. Explain what is Infrastructure Master? 
+Infrastructure Master is accountable for updating information about the user and group and global catalogue. 
+
+73. What is Virtual Machine scale sets? 
+It is an Azure compute resource that we can use to deploy and manage a set of identical VMs. It is easy to build large-scale services that target big compute, big data, and containerized workloads if all the VMs configured the same. 
+
+74. Explain what is RID Master? 
+RID master stands for Relative Identifier for assigning unique IDs to the object created in AD. 
+
+75.What is meant by the enterprise warehousing? 
+It is the phenomenon where the data is developed by the organization having access at a single point throughout the globe. The warehousing enables the server to get linked to a single point with the assistance of periodic handling. 
+
+76.State the class that can be used to retrieve data? 
+The class that can be used to get data from more than one list is the SPSite Data Query that is able to query data that are present in more than one list all across the diverse web collections. It is featured to aggregate data without the external links and only through the SharePoint. 
+
+77. What is Azure HD Insight?
+ Azure HDInsight deploys and provisions Apache Hadoop clusters in the cloud, providing a software framework designed to manage, analyze, and report on big data.
+
+78. What are Azure queues?
+Azure Queue Storage is a service for storing large numbers of messages. You access messages from anywhere in the world via authenticated calls using HTTP or HTTPS. A queue message can be up to 64 KB in size. A queue may contain millions of messages, up to the total capacity limit of a storage account. Queues are commonly used to create a backlog of work to process asynchronously.
+
+79. What are the drawbacks of using a queue? 
+Queues have some charges, however, these are minimal. Your queue is doing mediator work here. If your queue is down, devices will not able to communicate with each other. 
+
+80. How will you differentiate the storage queues and service bus queues? 
+The storage queues are used to access data from files and they are especially useful during the development and the QA activities. At the same time, Azure service bus queues are used to delete contents automatically after a configurable idle time. 
+
+81. How will you define the Redis Cache in Azure? 
+This is an open-source in-memory data structure that can be used as the message broker, or database, or cache etc. This is a secure Redis Cache managed by the Microsoft and it is accessible from any application within Azure. Also, it could support multiple data structures too. 
+
+82. Name some important applications of Microsoft Azure  
+Most important application of Microsoft Azure are:  
+Infrastructure Services, Mobile Apps, Web Applications, Cloud Services, Storage, Media Services, etc.  
+
+83. What are Redis databases? 
+Redis Databases are just a logical separation of data within the same Redis instance. The cache memory is shared between all the databases and actual memory consumption of a given database depends on the keys/values stored in that database.
+ For example, a C6 cache has 53 GB of memory. You can choose to put all 53 GB into one database or you can split it up between multiple databases.
+
+84. What is Windows Azure Scheduler? 
+Windows Azure Scheduler enable you to invoke activities –, for example, calling HTTP/S endpoints or presenting a message on a storage queue on any schedule. With Scheduler, you make jobs in the cloud that dependably call services both inside and outside of Windows Azure and execute those jobs on demand, on a routinely repeating schedule, or assign them for a future date. 
+
+85.What is Migration Assistant tool in Azure Websites? 
+Migration Assistant tool will examine your IIS installation and recognize which sites can be migrated to the cloud, featuring any components which can’t be migrated or are unsupported on the platform. Once broke down this tool will likewise create sites and databases provided under given Azure membership. 
+
+86.What is meant by the enterprise warehousing? 
+It is the phenomenon where the data is developed by the organization having access at a single point throughout the globe. The warehousing enables the server to get linked to a single point with the assistance of periodic handling. 
+
+87.What is Azure Resource Group? 
+Resource groups (RG) in Azure is an approach to group a collection of assets in logical groups for easy or even automatic provisioning, monitoring, and access control, and for more effective management of their costs. The underlying technology that powers resource groups is the Azure Resource Manager (ARM). 
+
+88. What Is Azure Data Factory 
+Azure Data Factory is a cloud-based data integration service which allows you to create data-driven workflows in the cloud for orchestrating and automating data movement and transformation. Using Azure Data Factory, you can create and schedule data-driven workflows (called pipelines) that can ingest data from disparate data stores. It can process and transform the data using compute services, such as Azure HDInsight Hadoop, Spark, Azure Data Lake Analytics, and Azure Machine Learning. 
+
+89. What Is Azure Databricks? 
+Azure Databricks is a fast, easy and collaborative Apache® Spark™ based analytics platform optimized for Azure. Designed in collaboration with the founders of Apache Spark, Azure Databricks combines the best of Databricks and Azure to help customers accelerate innovation with one-click setup; streamlined workflows and an interactive workspace that enables collaboration between data scientists, data engineers, and business analysts. 
+
+90. What is Azure Data Lake? 
+Microsoft Azure knowledge Lake may be a extremely ascendible public cloud service that enables developers, scientists, business professionals and other Microsoft customers to gain insight from large, complex data sets. As with most knowledge lake offerings, the service is composed of two parts: data storage and data analytics. 
+
+91. What is the difference between Azure Data Lake and Azure Data Warehouse? 
+DATA LAKE 	                                                                               DATA WAREHOUSE 
+Complementary to data warehouse 	                                                Maybe sourced to the data lake 
+Data is Detailed data or Raw data. 	                                                Data is filtered, summarised,refined 
+Schema on read (not structured, you can define your schema in n number of ways) 	Schema on write(data is written in Structured form or in a particular schema) 
+One language to process data of any format(USQL) 	                                It uses SQL 
+
+92. What is Azure Explorer? 
+Azure Explorer is a free Microsoft Azure storage tool; in this we can manage all our Microsoft Azure blobs at a common place or one place. Azure Storage Explorer is a useful GUI tool for inspecting and altering the data. 
+In Azure Explorer, we have “Azure Storage Account”, and in the Azure Storage Account, we can manage more than one Blob Container, in Blob Container we can create page blob as well as new folders to store our files.
+
+93.Differentiate between the PROC SUMMARY and PROC MEANS? 
+PROC MEANS refers to the subgroup statist created in the persistence of the BY statement that will be involved. The data here is sorted beforehand with the assistance of BY variables. 
+PROC SUMMARY is the aid of statistics giving all varieties of information running simultaneously and is produced for every subgroup automatically. The information in the outlet is not created. 
+
+94.What is profiling in Azure? 
+Profiling is only a procedure of measuring the performance analysis of an application. It is normally done to guarantee that the application is sufficiently steady and can maintain overwhelming traffic. Visual Studio gives us different tools to do it by gathering the performance information from the application that likewise helps in the troubleshooting issues. Once the profiling wizard is run, it sets up the execution session and collects the data of the sample 
+
+95.Where does profiling reports helps in? 
+The profiling reports helps in: 
+•	Deciding the longest running strategies inside the application.
+•	Measure the execution time of every strategy in the call stack
+•	Assess memory allocation. 
+
+Interview questions for experienced : (Level 3)
+
+96. What is swap deployments? 
+To promote a deployment in the Azure staging environment to the production environment, you can “swap” the deployments by switching the VIPs by which the two deployments are accessed. After the deployment, the DNS name for the cloud service points to the deployment that had been in the staging environment. 
+
+97. What are the differences between Azure Service Manager and Azure Resource Manager? 
+ASM uses XML REST API and ARM uses JSON REST API. In ASM, it is difficult to delete the resources which have been created and in ARM we can easily group to delete the resources. ASM supports only specific PaaS workloads and in ARM it supports all workloads of PaaS. 
+
+98. State what should be done in case of a service failure? 
+In the case of the service failure the following steps need to be performed; 
+•	Ensure that the object s services have stopped running which will enable the object services to withstand the failure. 
+•	To complete the last lap of work pending you can allow the system object storage remain functional by making the machined to again get back to online. Once they are started, the online replication will instantly activate with the missing updated files. 
+•	If you are incapable to replace drive then do remove the drive and let the system stay not mounted 
+
+99. What is the dead letter queue? 
+•	Messages are placed on the dead-letter sub-queue by the messaging system in the following scenarios. 
+•	When a message expires and dead-lettering for expired messages is set to true in a queue or subscription. 
+•	When the max delivery count for a message is exceeded on a queue or subscription. 
+•	When a filter evaluation exception occurs in a subscription and dead-lettering is enabled on filter evaluation exceptions. 
+
+100. What happens when you exhaust the maximum failed attempts for authenticating yourself via Azure AD? 
+We use a more sophisticated strategy to lock accounts. This is based on the IP address of the request and the passwords entered. The duration of the lockout also increases based on the likelihood that it is an attack.
+
+101. What is TFS build system in Azure? 
+A Build is the solution of an output. In Azure projects, you get the record with a .cspkg extension that implies a Cloud Service Package is utilized for the deployment of your cloud administrations. 
+•	Build Servers – In general terms a build server goes about as the machine where you put your deployment packages. To utilize Team Foundation Build, you should have no less than one build machine. This machine can be a physical machine or a virtual machine.
+•	Build Controllers – Manufacture Controllers are the component in the build system that accepts the build requests from any task inside the group project. Each build controller is dedicated to a solitary team project collection. So there is a balanced relationship between a team project and a build controller.
+•	Build Agents – Build Agents are components in the build system that accomplishes more processor-concentrated work. 
+
+102. What is Text Analytics API in Azure Machine? 
+Content Analytics API is a part of content examination web administrations worked with Azure Machine Learning. The API can be utilized to analyze unstructured content for tasks, like, sentiment analysis and key phrase extraction. The API restores a numeric score between 0 and 1. Scores near 1 show positive sentiment, while scores near 0 demonstrate negative sentiment. The upside of this API is that another new model need not be planned and prepared, the user just needs to bring the data and call the service to get the sentiment results. 
+
+103. If the client gets disconnected from cache with the services state the probable cause? 
+If the client gets disconnected the causal factor can be distributed into two categories The cause on the operator side: 
+• There might be a failure in the transfer of the standard cache from one node to the other. • While the service was processing and dispatching the cache got deployed. • There was a server update or an automated VM maintenance. The fault on the client side; • The application of the client accidentally got redeployed. • The application on the client side got auto-scaling. • The layer of the network on the client side altered. • There was a transient error on the network node. • The bound operation took more time. • The upper limit of the bandwidth was reached. 
+
+104. What is Kudu? 
+Every Azure App Service web application includes a "hidden" service site called Kudu. 
+Kudu Console for example is a debugging service for Azure platform which allows you to explore your web app and surf the bugs present on it, like deployment logs, memory dump, and uploading files to your web app, and adding JSON endpoints to your web apps, etc. 
+
+105. What is key vault in Azure? 
+Microsoft Azure Key Vault is a cloud-hosted management service that allows users to encrypt keys and small secrets by using keys that are protected by hardware security modules (HSMs). Small secrets are data less than 10 KB like passwords and .PFX files. 
+
+106. What is Azure MFA? 
+Azure Multi-Factor Authentication (MFA) is Microsoft's two-step verification solution. It delivers strong authentication via a range of verification methods, including phone call, text message, or mobile app verification. 
+
+107. What do you know about Azure WebJobs? 
+WebJobs is a feature of Azure App Service that enables you to run a program or script in the same context as a web app, API app, or mobile app. There is no additional cost to use WebJobs. 
+The Azure WebJobs SDK is a framework that simplifies the task of writing background processing code that runs in Azure WebJobs. It includes a declarative binding and trigger system that works with Azure Storage Blobs, Queues and Tables as well as Service Bus. You could also trigger Azure WebJob using Kudu API. 
+
+108. What is SQL Azure? 
+SQL Azure is the cloud-based relational database that is offered by Microsoft. The service is based on SQL server technology and it is used in a Microsoft data center that is hardware owned and maintained by Microsoft. 
+It is the very basic question about SQL Azure database and you may get this question not only among top SQL Azure interview questions but also among the Microsoft Azure interview questions for experienced.
+
+109. What will happen when SQL Azure database will reach the max size? 
+If the SQL Azure database will reach the max size, data read or fetch operations will still work on it but create, insert or update operations will stop with it. You can choose to drop, delete or truncate the data in this condition. 
+
+110. What are SQL Azure firewall rules? 
+SQL Azure firewall rules are provided to protect the data and to prevent access restrictions to the SQL Azure database. Firewall grants access to the originating IP's from which we are trying to access the database. In order to configure the firewall we need to configure a range of acceptable IP addresses upon which we try to connect to the SQL Azure server using the Management Portal or with the SQL Server Management Studio. Let us see the step by step process of adding and deleting rules as per our IP configurations.All access to SQL azure is blocked by firewall. 
+By default Database created in SQL Azure is blocked by firewall for security reasons. Any attempt from external access or access from any azure application is blocked by firewall. 
+
+111. How can you manage SQL Azure security? 
+SQL Azure also has a security management system very similar to the SQL on-premises versions. It basically consists of the following: 
+•	1. Logins: Server level. 
+•	2. Users: Database level, mapped to server logins. 
+•	3. Schemas: Database level, authorized/owned by a user or another schema. 
+•	4. Roles: Database level, authorized/owned by a user or another role. 
+•	5. Permissions: Database level, permission like SELECT, DELETE, ALTER and so on for objects/schemas granted to users/roles. 
+
+112. How will you back up the SQL Azure data? 
+Backup is important to handle the issues of hardware and 3 database replicas are used in SQL Azure for backup. For the errors based on user level, the COPY command is used for the creation of SQL Azure database replica. It is also possible to back up the data of SQL Azure to any local SQL server with the use of SSIS, BCP etc. 
+
+113. How can you improve the performance of SQL Azure databases? 
+To improve the performance of SQL Azure databases, you can tune the database by using the information from the execution plan as well as statistics of the query. It is possible to use dynamic management views of SQL Azure for the monitoring and management of the SQL Azure database. Network latency and bandwidth also affect the performance of the SQL Azure database so it can be used to improve the performance.
+
+114. Can you name some scenarios where VMs are preferred? 
+•	Development And check – Azure VMs provide a fast and straightforward thanks to produce a laptop with specific configurations needed to code and check an application. 
+•	Applications within the cloud – as a result of demand for your application will fluctuate, it would create economic sense to run it on a VM in Azure. You get hold of further VMs after you would like them and shut them down after you don’t. 
+•	Extended datacenter – Virtual machines in AN Azure virtual network will simply be connected to your organization’s network. 
+•	With Unmanaged disks, you create your own storage account and specify that storage account when you create the disk. 
+
+115. What are the steps for creating ETL process in Azure Data Factory? 
+While we are trying to extract some data from Azure SQL server database, if something has to be processed, then it will be processed and is stored in the Data Lake Store. 
+Steps for Creating ETL 
+•	Create a Linked Service for source data store which is SQL Server Database 
+•	Assume that we have a cars dataset 
+•	Create a Linked Service for destination data store which is Azure Data Lake Store 
+•	Create a dataset for Data Saving 
+•	Create the pipeline and add copy activity 
+•	Schedule the pipeline by adding a trigger 
+
+116. What is the integration runtime? 
+The integration runtime is the compute infrastructure that Azure Data Factory uses to provide the following data integration capabilities across various network environments. 
+
+117. What is the limit on the number of integration runtimes? 
+There is no hard limit on the number of integration runtime instances you can have in a data factory. There is, however, a limit on the number of VM cores that the integration runtime can use per subscription for SSIS package execution. 
+
+118. What are the 3 types of integration runtimes? Explain them? 
+3 Types of integration runtimes: 
+•	Azure Integration Run Time: Azure Integration Run Time can copy data between cloud data stores and it can dispatch the activity to a variety of compute services such as Azure HDinsight or SQL server where the transformation takes place 
+•	Self Hosted Integration Run Time: Self Hosted Integration Run Time is software with essentially the same code as Azure Integration Run Time. But you install it on an on-premise machine or a virtual machine in a virtual network. A Self Hosted IR can run copy activities between a public cloud data store and a data store in a private network. It can also dispatch transformation activities against compute resources in a private network. We use Self Hosted IR because Data factory will not be able to directly access on-primitive data sources as they sit behind a firewall.It is sometimes possible to establish a direct connection between Azure and on-premises data sources by configuring the firewall in a specific way if we do that we don’t need to use a self-hosted IR. 
+•	Azure SSIS Integration Run Time: With SSIS Integration Run Time, you can natively execute SSIS packages in a managed environment. So when we lift and shift the SSIS packages to data factory, we use Azure SSIS Integration Run TIme. 
+
+119. Give a clear overview of API in Azure? 
+The Test Analytics in API is a web service that is built with the Azure learning. It is an effective tool to analyze the unstructured data like the extraction of the key phrase. It runs with the binomial scoring unit that is either 0 or 1 where 1 corresponds to a positive and 0 corresponds to a negative viewpoint. The advantage is that it does not need any assistance with designing and training which imply that the data is in the hands of directly the user. Proceed to find more Microsoft Azure interview questions for experienced. 
+
+120. Explain how does a character analytics API function? 
+The working of the character analytics of API does not account for the characterization of words like good or bad. It uses the advanced feature through which the processing of natural language is mediated. 
+
+121. What is Azure API management services? 
+Use Azure API Management as a turnkey solution for publishing APIs to external and internal customers. Quickly create consistent and modern API gateways for existing back-end services hosted anywhere, secure and protect them from abuse and overuse, and get insights into usage and health. 
+
+122. What are the principal segments of the Windows Azure platform? 
+Windows Azure has the following three principal segments: 
+•	Windows Azure Compute: It gives a code that can be managed by the hosting environment. It provides the benefit of calculation through parts. It consists of three types of roles - Web Role, Worker Role, and VM Role. 
+•	Windows Azure Storage: It gives four types of Storage services - Queue, Tables, Blobs, and Windows Azure Drives (VHD) 
+•	Windows Azure AppFabric: AppFabric provides five services - Service bus, Access, Caching, Integration, and Composite. 
+
+123. What is Azure DevOps? 
+Azure DevOps is the new name for Microsoft Visual Studio Team Services (VSTS). It is known as a promising application lifecycle management tool. Azure DevOps helps in planning a project with the help of Agile tools and templates. The other functionalities of Azure DevOps include the management and running of test plans and version control of source code alongside the management of branches. In addition, Azure DevOps also helps in the deployment of a solution across different platforms by leveraging Azure Pipelines. Azure DevOps facilitates continuous integration and continuous deployment for faster and effective deployment
+
+124. What tools and capabilities Azure Dev Ops provide? 
+•	Azure Pipelines 
+•	CI/CD works with all languages, platforms, and clouds. Connect to dirty dogHub or any Git repository and deploy unceasingly.
+•	Azure Boards 
+•	Powerful work following with Kanban boards, backlogs, team dashboards, and custom reporting. 
+•	Azure Artifacts
+•	Maven, npm, and NuGet package feeds from public and personal sources. Azure Repos
+•	Unlimited cloud-hosted private Git repos for your project. Collaborative pull requests, advanced file management, and more. 
+•	Azure Test Plans
+•	All in one planned and exploratory testing solution. 
+
+125. What do you mean by SAS? 
+SAS is an abbreviation for Statistical analytical System which is a software suite performing analysis of multiple variables. It is in linked to the predictive analysis, data handling, advanced analytics or corporative intelligence. It produces a smooth interface that offers graphical and clicks based solution. It is user-friendly for the technical or the non-technical with advanced features. 
+
+126. State some features of SAS? 
+There is some interlinked feature of SAS which includes; 
+•	It provides the user access to manage the resources just like that of the DBMS. 
+•	It is leading with the leading analytical to carry out different business services and products. 
+•	It enables easy visualization and interpretation with the use of graphs and its breaks the complex panels into simple plots. 
+
+127. What is Azure Genomics? 
+Microsoft genetic science simplifies however you method, store, and share large volumes of genomics data. Through the ability of cloud computing and Microsoft Azure, you can more easily collaborate with the scientific community to exchange important data insights on genomic medicine. 
+
+128. What is Azure IoT? 
+The Azure Internet of Things (IoT) is a collection of Microsoft-managed cloud services that connect, monitor, and control billions of IoT assets. In simpler terms, an IoT solution is made up of one or more IoT devices and one or more back-end services running in the cloud that communicate with each other. 
+
+129. What is Azure IoT Edge? 
+The edge of the IoT is wherever the action is. It includes a good array of sensors, actuators, and devices—those system end-points that move with and communicate period knowledge from sensible product and services. 
+
+130. What is Azure Bot Service? 
+Azure larva Service is Microsoft’s computer science (AI) chatbot offered as a service on the Azure cloud service marketplace. Azure larva Service offers the flexibility to feature intelligent agents that are capable of spoken language while not having to commit the resources to develop one’s own AI.
+
+131. What is federation in SQL Azure?
+Organization in SQL Azure is introduced for scalability. Federation helps both managers and developers scale information. It helps managers by making repartitioning and redistributing of information in a simpler manner. It enables developers in the layer of routing and sharing of information. It helps in routing without application downtime.
+
+132. Your customer has configured the policy-based routing but due to the issue, he wants to change to route based configuration in Azure VPN, how you can deliver the solution?
+Basically, the customer can’t change them or update their routing method directly as that is not supported by MS Azure. He must create the New connection use the method to route based on the new connection.
+•	First, you need to delete the Route based connection
+•	Delete the Gateway
+•	Then you will recreate the connection using Azure Portal, CLI or PowerShell.
+
+133.What is Azure Backup and what are the benefits of Azure Backup?
+Azure Backup is a cloud-based solution which will help you to take the backup of the Azure VM, PaaS SQLDB, file service, web apps etc.
+•	It provides a hybrid solution to take the backup.
+•	Storage will be managed automatically using Azure storage accounts and it doesn’t require any local storage like on-premises.
+•	You can transfer the unlimited data and this data stored in encrypted format in Azure storage accounts.
+
+134.You have a couple of VMs of 4 Core and 16GB. You need to upgrade VMs to 8 Core and 32 GB Ram since they are not performing well. So, what are the steps you will take?
+You will go to specific VMs and perform the below steps.
+•	First, take approval from the Application Owner for downtime because it will automatically reboot the VM.
+•	Go to each VM and Click on the Size
+•	Select the VM instance Size of 8 core 32 GB Ram VMs.
+•	Once you will select the specific Size, it will automatically start upgrading the instance.
+•	After that, you need to verify all the setting of the VMs and handover to application Owner if activity completed successfully.
+
+135. What is CosmosDB?
+ Azure Cosmos DB is globally replicated, multimodal database service that offers rich querying over schema-free data.
+ The definition of Cosmos DB says 'Globally Replicated' which means, you can replicate your database in different geographical areas. It stores data in JSON format and there is no need to define the schema in advance hence it is schema free. You can execute the SQL query on stored JSON documents. Cosmos DB was formerly known as Document DB and it supports multimodal like SQL, Table API, Graph API etc.
+ Azure Cosmos DB is the right solution for web, mobile, gaming applications when predictable throughput, high availability and low latency are key requirements.
+
+136. What Is Azure Kubernetes Service
+ Kubernetes is an open source system started by Google to help orchestrate (deploy, scale and manage) containerized applications. Azure Kubernetes Service makes working with Kubernetes easier.
+Before we learn how to orchestrate containers, let’s discuss a bit about containers.
+ You can run your applications as containers. Think about containers as isolated processes that have their own directory, user groups, ports, etc. which run in the host machine. They are like virtual machines, but not the same. Virtual machines have their own operating systems, whereas containers use the operating system of the host machine. Also, the containers run from images. Think of images as software installers. But images bundle up the software code with its dependencies, because of which containers run the same way on different environments since they are environment independent to a much larger extent.
+
+137. What are the other VNET options for achieving connectivity with on premise and azure resources?
+ Site to Site and express route are other options for achieving cross premises connectivity. 
+Site to site to specifically use when you have large number of resources to be connected. In some cases, Site to Site or Point to Site connectivity may introduce network latency as VPN created by these features work on public infrastructure (Internet) only. To overcome on this situation “Express Route” option can be taken which offers dedicated Leased Line based offering to overcome on latency issue
+
+138. What are the various ways by which an on premises VM can be migrated to Azure? 
+The best and quick way can be to migrate the associated OS disk and data disks from on premises to Azure storage, and then provision VM out of it.
+ For migration of on premises VM, we need to understand what is the virtualization platform used for hosting the VM. Various virtualization techniques are HyperV, VMWare etc. For creating VM on Azure requires VHD file only and that can be obtained from HyperV directly. In case VM is hosted on virtualization platform other than HyperV then we need to first convert the existing VM disks into vhd format and then can be uploaded to Azure storage. Once the disk files are present on Azure, VM can be provisioned.
+
+139. What is the difference between mapping and wrangling data flows?
+Mapping data flows provide a way to transform data at scale without any coding required. You can design a data transformation job in the data flow canvas by constructing a series of transformations. Start with any number of source transformations followed by data transformation steps. Complete your data flow with a sink to land your results in a destination. Mapping data flow is great at mapping and transforming data with both known and unknown schemas in the sinks and sources.
+Wrangling data flows allow you to do agile data preparation and exploration using the Power Query Online mashup editor at scale via spark execution. With the rise of data lakes sometimes you just need to explore a data set or create a dataset in the lake. You aren't mapping to a known target. Wrangling data flows are used for less formal and model-based analytics scenarios.
+
+ 140. State the difference pricing model of Microsoft Azure
+Here, are different pricing model of Microsoft Azure:
+BYOL Model: It brings your license model. It is just right to access model. You can obtain it outside of the Azure Marketplace. This model is not charged any fees.
+Free Software Trial: It is a full-featured version which is promotionally free for a limited period of time. However, for excessive use, you need to pay fees.
+Usage-based: This is a widely used model of Microsoft Azure. Here, user are changed for only that service which is used by them.
+Monthly fee: Here, you need to pay a fixed monthly payment for a subscription.
+
+141. How can you create an HDInsight Cluster in Azure?
+To make an Azure HDInsight Cluster, open the Azure portal > click on New > select Data Services > click on HDInsight.
+
+Hadoop is the default and native execution of Apache Hadoop.
+
+HBase is an Apache open-source NoSQL database based on Hadoop that gives random access and solid consistency for a lot of unstructured data.
+
+Storm is a distributed, fault-tolerant, open-source computation system that enables you to process data in real time.
+
+

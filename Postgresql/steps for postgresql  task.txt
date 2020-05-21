@@ -1,0 +1,44 @@
+                              POSTGRESql TASKS
+
+1.Import csv files into a table using pgAdmin ?
+
+Step 1: To create a csv file either with excel or notepad in csv format,
+with the columns and row data filled in it.
+
+Step 2: To create a table specifying the column and row name alone without 
+entering the values.
+
+Step 3: Open the Pg admin and right click on to the table name. 
+We could find a option of import and export click on it.
+
+Step 4: Now paste the path of the csv file and press import and 
+set the header as yes and select the delimiter as ",".
+
+Step 5: Then press ok and thus you could export the data to the table from 
+the csv file.
+
+
+2.PostgreSQL Drop trigger ?
+
+Command for the Drop trigger
+
+DROP TRIGGER [IF EXISTS] trigger-name 
+ON table-name [ CASCADE | RESTRICT ];
+
+Cascade which means it will drop all the objects related with the trigger
+
+Restrict which means it will note delete the trigger if objects
+are depended 	
+
+3.Add an auto incremented primary key to an existing table add 
+an foreign key to an existing table ?
+
+For auto increment of the primary key to an existing table
+
+COMMAND:
+ALTER TABLE
+ADD column id serial NOT NULL Primary Key;
+
+We have to indicate the type of the id as SERIAL.
+So automatically the primary key will get incremented.
+

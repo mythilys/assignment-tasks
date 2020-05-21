@@ -1,0 +1,72 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: black;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRMetCXBgMqeO22xsrr4Bh_FZ8vXTew3LFm78bdek7PKaLGJlMc&usqp=CAU');
+  position: relative;
+}
+.navbar {
+  background: #47270C;
+}
+.nav-link,
+.navbar-brand {
+  color: white;
+  cursor: pointer;
+}
+.nav-link {
+  margin-right: 1em !important;
+}
+.nav-link:hover {
+  color: #000;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #331C09;
+  color: white;
+  text-align: center;
+  padding: 5px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="wrapper">
+	<div id="error"></div>
+	<form id="myform" onsubmit="return validation()">
+		<div class="inputf">
+			<input type="text" placeholder="Name" id="name">
+		</div>
+		<div class="inputf">
+			<input type="text" placeholder="Name of dog" id="nameofdog">
+		</div>
+		<div class="inputf">
+			<input type="text" placeholder="Email" id="email">
+		</div>
+		<div class="inputf">
+			<input type="text" placeholder="Experience with you dog" id="experience">
+		</div>
+		<div class="btn">
+			<input type="submit">
+		</div>
+	</form>
+</div>
